@@ -1,0 +1,5 @@
+.mainContent {  
+    flex: 1; /* 填充剩余空间 */  
+    padding: 20px; /* 内部填充 */  
+    background-color: #f9f9f9; /* 背景色 */  
+}  

@@ -1,0 +1,54 @@
+.sidebar {  
+  width: 95%; 
+  background-color: #fff;  
+  padding: 20px;  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+  display: flex;          /* 使用 flex 布局 */  
+  flex-direction: column; /* 纵向排列子元素 */  
+  align-items: center;    /* 水平居中对齐 */  
+  text-align: center;     /* 文字居中 */  
+}  
+
+.profilePicture {  
+  width: 100px;  
+  height: 100px;  
+  border-radius: 50%;     /* 圆形头像 */  
+  overflow: hidden;  
+  margin-bottom: 15px;    /* 顶部间距 */  
+}  
+
+.profilePicture img {  
+  width: 100%;  
+  height: auto;           /* 适应宽度 */  
+}  
+
+h2, span, h3, p {  
+  margin: 5px 0;          /* 上下间距 */  
+}  
+
+.skills, .languages {  
+  display: grid;          /* 网格布局 */  
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));  
+  gap: 10px;              /* 网格间距 */  
+  width: 100%;            /* 占满宽度 */  
+}  
+
+.language {  
+  background-color: #e0e0e0;  
+  border-radius: 5px;  
+  padding: 5px 10px;  
+  margin-right: 5px;  
+  margin-bottom: 5px;  
+}  
+
+.externalLinks {  
+  display: flex;  
+  justify-content: center; /* 水平居中链接 */  
+  margin-top: 20px;  
+}  
+
+.externalLinks img {  
+  width: 24px;  
+  height: 24px;  
+  margin-left: 10px;      /* 左边距 */  
+}

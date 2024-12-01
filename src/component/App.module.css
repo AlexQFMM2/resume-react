@@ -1,0 +1,46 @@
+
+.container {  
+  display: flex; /* 使左右布局 */  
+  height: 100vh; /* 填满整个视口高度 */  
+  margin: 0; /* 确保没有外部空间 */  
+  padding: 0; /* 确保没有内边距 */  
+  flex-direction: row; /* 默认横向 */
+}  
+
+/* 在小屏幕下改为纵向 */  
+@media (max-width: 768px) {  
+  .container {  
+      flex-direction: column; /* 切换为纵向 */  
+  }  
+}
+
+/* 默认情况下，左侧和右侧都是可见的 */  
+.sidebar {  
+  width: 300px; /* 左侧固定宽度 */  
+  background-color: #f4f4f4;  
+  padding: 20px;  
+}  
+
+.main-content {  
+  flex: 1; /* 右侧自适应宽度 */  
+  padding: 20px; 
+}  
+
+/* 媒介查询，用于改变布局 */  
+@media (max-width: 800px) {  
+  .container {  
+    flex-direction: column; /* 改为纵向布局 */  
+    overflow-y: auto;
+  }  
+  .sidebar, .main-content {  
+    width: 100%; /* 使左右两侧都占满宽度 */  
+  }  
+}  
+
+/* 媒介查询，用于改变布局 */  
+@media (min-width: 800px) {  
+  .main-content { 
+    overflow-y: auto;  
+  }  
+}  
+

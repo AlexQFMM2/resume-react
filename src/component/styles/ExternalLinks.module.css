@@ -1,0 +1,19 @@
+.externalLinks {  
+    display: flex;  
+    justify-content: flex-start; /* 默认在右边 */  
+    margin-top: 20px;  
+  }  
+  
+  .externalLinks img {  
+    width: 24px;  
+    height: 24px;  
+    margin-left: 10px;  
+  }  
+  
+  /* 媒介查询，用于应对宽度不足时 */  
+  @media (max-width: 800px) {  
+    .externalLinks {  
+      justify-content: flex-end; /* 移动到左边 */  
+      margin-top: 0;  
+    }  
+  }
